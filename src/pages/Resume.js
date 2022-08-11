@@ -37,21 +37,21 @@ const Resume = () => {
       color: "#2f4c64",
     },
     resume_header: {
-      backgroundColor: "#ff7300",
-      color: '#fff',
-      alignItems: 'center',
-      fontWeigth: 'bolder',
+      backgroundColor: "#2f4c64",
+      color: "#fff",
+      alignItems: "center",
+      fontWeigth: "bolder",
       padding: "2px",
     },
     font: {
-      fontSize: "17px",
+      fontSize: "16px",
     },
   };
 
   return (
-    <section className="cont mx-auto container resume_cont">
+    <section className="mx-auto container resume_cont shadow">
       <div className="col p-2">
-        <div className="p-4" style={color}>
+        <div className="p-4">
           <div className="row">
             <div className="d-flex justify-content-between">
               {name && (
@@ -71,7 +71,7 @@ const Resume = () => {
                     {job_title}
                   </h3>
                 )}
-                <div className="d-flex justify-content-between fw-bolder">
+                <div className="d-flex flex-wrap justify-content-between fw-bolder">
                   {github && <a href={github}>Github</a>}
 
                   {email && <a href={email}>Email</a>}
@@ -138,7 +138,7 @@ const Resume = () => {
                   {date_2 && <p>{date_2}</p>}
                 </div>
               </div>
-              <div className="text-dark m-4">
+              <div className="text-dark">
                 {list.map((li) => (
                   <li className="" key={uniqid()}>
                     {li}
@@ -161,7 +161,7 @@ const Resume = () => {
                 </div>
                 <div>{date_3 && <p>{date_3}</p>}</div>
               </div>
-              <div className="text-dark m-4">
+              <div className="text-dark">
                 {list_2.map((li_2) => (
                   <li key={uniqid()}>{li_2}</li>
                 ))}

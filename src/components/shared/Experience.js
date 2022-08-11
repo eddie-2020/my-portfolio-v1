@@ -5,7 +5,7 @@ import { experience } from "./ResumeData";
 const Experience = () => {
   if (!experience.length) return null;
   return (
-    <div className="m-4">
+    <div className="">
       {experience.map((exp) => (
         <div key={uniqid()} className="text-dark">
           <h5 className="text-uppercase text-dark fw-bolder mt-4">
@@ -24,10 +24,10 @@ const Experience = () => {
 
 const font = {
   built_with: {
-    fontSize: "15px",
+    fontSize: "16px",
   },
   desc: {
-    fontSize: "17px",
+    fontSize: "16px",
   },
 };
 export default Experience;

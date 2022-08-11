@@ -1,132 +1,91 @@
 import React from "react";
 import { home } from "../components/shared/HomeData";
-import * as GiIcon from "react-icons/gi";
-import * as MdIcon from "react-icons/md";
+// import Typewriter from "typewriter-effect";
+import TypeWriterEffect from "react-typewriter-effect";
 
 const Home = () => {
-  const { photo, greeting, sub_greeting, info } = home;
+  const { photo, sub_greeting, info_1, info_2, info_3 } = home;
+
+  const info = [info_1, info_2, info_3]
+
+  const hash_tags = ["#Code", "#Experience", "#Problem Solving"]
 
   return (
-    <div className="container col col-sm-5 text-light d-flex align-items-center justify-content-between home_cont">
-      <div className="row justify-content-evenly align-items-center mx-auto">
-        <div className="col-4 text-center">
-          {greeting && (
-            <h1 className="m-0 font-big text-uppercase">{greeting}</h1>
-          )}
-          {sub_greeting && (
-            <h1 className="m-0 font-big animate-charcter text-uppercase">
-              {sub_greeting}
-            </h1>
-          )}
-          {info && <p className="mt-2">{info}</p>}
+    <div className="container text-center home_cont">
+      <div className="">
+        <div className="">
+          <div className="">
+            {photo && <img className="img-fluid" src={photo} alt="..." />}
+          </div>
+          {/* <Typewriter
+            onInit={(typewrite) => {
+              typewrite
+                .typeString(info_1)
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString(info_2)
+                .start()
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString(info_3)
+                .start();
+            }}
+          /> */}
+          <div>
+            {sub_greeting && (
+              <h1 className="mt-5 font-big animate-charcter text-uppercase">
+                {sub_greeting}
+              </h1>
+            )}
+          </div>
+          <TypeWriterEffect
+            textStyle={{
+              textAlign: "center",
+              fontWeight: 700,
+              textTransform: "uppercase",
+              fontSize: "1.3em",
+              backgroundImage: `linear-gradient(-225deg, #ffffff, #ff7300, rgb(78, 194, 233), rgb(207, 58, 58), #ffffff)`,
+              backgroundSize: "200% auto",
+              color: "#fff",
+              backgroundClip: "text",
+              webkitBackgroundClip: 'text',
+              webkitTextFillColor: `transparent`,
+              animation: `textclip 2s linear infinite`,
+            }}
+            startDelay={1000}
+            cursorColor="#3F3D56"
+            multiText={[...info]}
+            loop={true}
+            nextTextDelay={1000}
+            typeSpeed={100}
+          />
         </div>
-        <div style={size.divider}>
-          <MdIcon.MdSafetyDivider />
-        </div>
-        <div className="w-50 col-4">
-          {photo && <img className="img-fluid" src={photo} alt="..." />}
-        </div>
-        <span style={size.ring}>
-          <GiIcon.GiCloudRing />
-        </span>
-        <span style={size.watering}>
-          <GiIcon.GiMouthWatering />
-        </span>
-        <span style={size.planet}>
-          <GiIcon.GiRingedPlanet />
-        </span>
-        <span style={size.linked}>
-          <GiIcon.GiLinkedRings />
-        </span>
-        <span style={size.boxing}>
-          <GiIcon.GiBoxingRing />
-        </span>
-        <span style={size.double}>
-          <GiIcon.GiDoubleRingedOrb />
-        </span>
-        <span style={size.alarm}>
-          <GiIcon.GiRingingAlarm />
-        </span>
-        <span style={size.trans}>
-          <GiIcon.GiTransportationRings />
-        </span>
-        <span style={size.beam}>
-          <GiIcon.GiRingedBeam />
-        </span>
+      </div>
+      <div className="type_border">
+      <TypeWriterEffect
+            textStyle={{
+              textAlign: "center",
+              fontWeight: 700,
+              textTransform: "capitalize",
+              fontSize: "1.2em",
+              backgroundImage: `linear-gradient(-225deg, #ffffff, #ff7300, rgb(78, 194, 233), #ffffff)`,
+              backgroundSize: "200% auto",
+              color: "#fff",
+              backgroundClip: "text",
+              webkitBackgroundClip: 'text',
+              webkitTextFillColor: `transparent`,
+              animation: `textclip 2s linear infinite`,
+            }}
+            startDelay={1000}
+            cursorColor="#3F3D56"
+            multiText={[...hash_tags]}
+            loop={true}
+            nextTextDelay={1000}
+            typeSpeed={50}
+          />
       </div>
     </div>
   );
-};
-
-const size = {
-  ring: {
-    fontSize: "50px",
-    position: "fixed",
-    top: "300px",
-    left: "800px",
-    opacity: "20%",
-  },
-  watering: {
-    position: "fixed",
-    top: "100px",
-    left: "200px",
-    fontSize: "50px",
-    opacity: "40%",
-  },
-  planet: {
-    fontSize: "50px",
-    position: "fixed",
-    top: "120px",
-    left: "1117px",
-    opacity: "20%",
-  },
-  boxing: {
-    fontSize: "50px",
-    position: "fixed",
-    top: "460px",
-    left: "489px",
-    opacity: "20%",
-  },
-  beam: {
-    fontSize: "50px",
-    position: "fixed",
-    top: "870px",
-    left: "826px",
-    opacity: "20%",
-  },
-  linked: {
-    fontSize: "50px",
-    position: "fixed",
-    top: "978px",
-    left: "340px",
-    opacity: "20%",
-  },
-  double: {
-    fontSize: "50px",
-    position: "fixed",
-    top: "781px",
-    left: "1374px",
-    opacity: "20%",
-  },
-  trans: {
-    fontSize: "50px",
-    position: "fixed",
-    top: "980px",
-    left: "1856px",
-    opacity: "20%",
-  },
-  alarm: {
-    fontSize: "50px",
-    position: "fixed",
-    top: "348px",
-    left: "1743px",
-    opacity: "20%",
-  },
-  divider: {
-    fontSize: "50px",
-    opacity: "50%",
-    textAlign: "center",
-  },
 };
 
 export default Home;

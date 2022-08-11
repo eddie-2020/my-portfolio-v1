@@ -6,7 +6,7 @@ const ResumeList = () => {
   if (!resume_skills_lists.length) return null;
 
   return (
-    <div className="container d-flex flex-wrap justify-content-evenly">
+    <div className="container">
       {resume_skills_lists.map((resume_skill) => (
         <li key={uniqid()} style={skill_font} className="text-dark">
           {resume_skill}
@@ -17,7 +17,7 @@ const ResumeList = () => {
 };
 
 const skill_font = {
-  fontSize: "17px",
+  fontSize: "16px",
 };
 
 export default ResumeList;

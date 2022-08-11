@@ -9,31 +9,31 @@ const SidebarData = [
   {
     title: "Home",
     path: "/",
-    icon: <AiIcons.AiFillHome />,
+    icon: <AiIcons.AiFillHome color="#dc3545" />,
     cName: "nav-text",
   },
   {
     title: "Skills",
     path: "/skills",
-    icon: <GiIcons.GiSkills />,
+    icon: <GiIcons.GiSkills color="#dc3545" />,
     cName: "nav-text",
   },
   {
     title: "Projects",
     path: "/projects",
-    icon: <GoIcons.GoProject />,
+    icon: <GoIcons.GoProject color="#dc3545" />,
     cName: "nav-text",
   },
   {
     title: "Resume",
     path: "/resume",
-    icon: <IoIcons.IoIosPaper />,
+    icon: <IoIcons.IoIosPaper color="#dc3545" />,
     cName: "nav-text",
   },
   {
     title: "About",
     path: "/about",
-    icon: <FaIcons.FaUser />,
+    icon: <FaIcons.FaUser color="#dc3545" />,
     cName: "nav-text",
   },
 ];

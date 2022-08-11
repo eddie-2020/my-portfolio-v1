@@ -1,8 +1,9 @@
 const home = {
-  photo: 'https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif',
-  greeting: "Hi, ",
-  sub_greeting: "I'm Edward Oluyara,",
-  info: "Full Stack Developer | UI Designer",
+  photo: 'https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif',
+  sub_greeting: "Edward Oluyara,",
+  info_1: "Frontend Developer",
+  info_2: "Backend Developer",
+  info_3: "Full Stack Developer"
 };
 
 export { home };
