@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Passion+One&family=Rubik:wght@300&family=Ubuntu:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Passion+One&family=Roboto:wght@300&family=Rubik:wght@300&family=Ubuntu:wght@300;400&display=swap");
 
 body {
   font-family: sans-serif;
@@ -14,7 +15,6 @@ body {
 
 .home,
 .projects,
-.about,
 .resume {
   display: flex;
   height: 90vh;
@@ -26,10 +26,34 @@ body {
 
 .skills {
   display: flex;
-  height: 90vh;
   align-items: center;
-  justify-content: center;
   font-size: 3rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.prev {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.next {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.project_cont {
+  font-family: "Roboto", sans-serif;
+}
+
+.skills_cont {
+  height: 90vh;
 }
 
 .img-fluid {
@@ -44,8 +68,28 @@ body {
   width: 60px;
 }
 
+.card_marging {
+  margin: 130px;
+}
+
+.project_tool {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .ff-jose {
   font-family: "Ubuntu", sans-serif;
+}
+
+.text_info:hover {
+  color: #fff;
 }
 
 /* .img-fluid {
@@ -86,7 +130,7 @@ body {
 
 /* ===================== Transition ===================== */
 
-.animate-charcter {
+.animate-character {
   background-image: linear-gradient(
     -225deg,
     #ffffff,
@@ -111,7 +155,7 @@ body {
 
 .text_style {
   text-align: center;
-  color: #3F3D56;
+  color: #3f3d56;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 1.5em;
@@ -119,6 +163,54 @@ body {
 
 .link_to_project {
   text-align: initial;
+}
+
+.animate_ {
+  font-size: 50px;
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff,
+    #ff7300,
+    rgb(78, 194, 233),
+    rgb(207, 58, 58),
+    #ffffff
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+.animate_tools {
+  font-size: 10px;
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff,
+    #ff7300,
+    rgb(78, 194, 233),
+    rgb(207, 58, 58),
+    #ffffff
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+.about_img {
+  width: 100%;
+}
+
+.img {
+  height: 250px;
 }
 
 @media (max-width: 700px) {
@@ -129,6 +221,15 @@ body {
     margin-top: 20px;
     letter-spacing: 2px;
   }
+  .animate_ {
+    font-size: 30px;
+  }
+  .card_marging {
+    margin: 5px;
+  }
+  .img {
+    height: 200px;
+  }
   .skills {
     display: flex;
     height: 90vh;
@@ -138,6 +239,17 @@ body {
     flex-direction: column;
     font-size: 3rem;
   }
+  .about {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+  }
   .skills_img {
     width: 100%;
     margin-bottom: 50px;
@@ -145,7 +257,10 @@ body {
   .skill_icon {
     width: 40px;
   }
-
+  .about_cont {
+    display: flex;
+    flex-direction: column;
+  }
   .link_to_project {
     text-align: center;
   }
@@ -186,6 +301,7 @@ body {
 /* ===================== Resume ===================== */
 li::marker {
   color: #2f4c64;
+  align-items: center;
   font-size: 2em;
 }
 
@@ -194,8 +310,15 @@ li::marker {
   width: max-content;
 }
 
+.about_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .resume_cont {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 50px;
 }
 

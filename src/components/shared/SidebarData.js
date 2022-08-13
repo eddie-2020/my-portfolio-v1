@@ -3,7 +3,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 import * as GoIcons from "react-icons/go";
-import * as GiIcons from "react-icons/gi"
+import * as GiIcons from "react-icons/gi";
 
 const SidebarData = [
   {

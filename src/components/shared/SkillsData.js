@@ -1,5 +1,5 @@
 import js from "../assets/icons/icons8-javascript.gif";
-import nomad_amico from "../assets/images/nomad-amico.png";
+import dev_amico from "../assets/images/Development-pana.png";
 import react from "../assets/icons/icons8-react.gif";
 import sql from "../assets/icons/icons8-postgresql-48.png";
 import ruby from "../assets/icons/icons8-jewel-48.png";
@@ -12,7 +12,7 @@ import rails from "../assets/icons/icons8-rails.png";
 import github from "../assets/icons/icons8-github.gif";
 
 const skills = {
-  photo: nomad_amico,
+  photo: dev_amico,
   javascript: js,
   react: react,
   sql: sql,

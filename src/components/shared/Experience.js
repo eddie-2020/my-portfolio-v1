@@ -1,6 +1,7 @@
 import React from "react";
 import uniqid from "uniqid";
 import { experience } from "./ResumeData";
+import * as GiBullet from "react-icons/gi";
 
 const Experience = () => {
   if (!experience.length) return null;
@@ -11,10 +12,10 @@ const Experience = () => {
           <h5 className="text-uppercase text-dark fw-bolder mt-4">
             {exp.title}
           </h5>
-          <span style={font.desc}>{exp.description}</span>
-          <li className="mt-0" style={font.built_with}>
-            {exp.built_with}
-          </li>
+          <p style={font.desc}>{exp.description}</p>
+          <p className="mt-0" style={font.built_with}>
+            <GiBullet.GiBulletBill style={font.icon} /> {exp.built_with}
+          </p>
           <hr />
         </div>
       ))}
@@ -28,6 +29,9 @@ const font = {
   },
   desc: {
     fontSize: "16px",
+  },
+  icon: {
+    color: "#2f4c64",
   },
 };
 export default Experience;

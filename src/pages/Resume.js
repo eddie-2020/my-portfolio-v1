@@ -6,6 +6,7 @@ import {
 } from "../components/shared/ResumeData";
 import Experience from "../components/shared/Experience";
 import ResumeList from "../components/shared/ResumeList";
+import * as GiBullet from "react-icons/gi";
 import uniqid from "uniqid";
 
 const Resume = () => {
@@ -46,6 +47,9 @@ const Resume = () => {
     font: {
       fontSize: "16px",
     },
+    icon: {
+      color: "#2f4c64",
+    },
   };
 
   return (
@@ -65,7 +69,7 @@ const Resume = () => {
               <div>
                 {job_title && (
                   <h3
-                    className="fw-normal text-uppercase "
+                    className="fw-normal text-uppercase fs-5"
                     style={color.text_color}
                   >
                     {job_title}
@@ -140,9 +144,9 @@ const Resume = () => {
               </div>
               <div className="text-dark">
                 {list.map((li) => (
-                  <li className="" key={uniqid()}>
-                    {li}
-                  </li>
+                  <p className="" key={uniqid()}>
+                    <GiBullet.GiBulletBill style={color.icon} /> {li}
+                  </p>
                 ))}
               </div>
               {/* Education Field */}
@@ -163,7 +167,9 @@ const Resume = () => {
               </div>
               <div className="text-dark">
                 {list_2.map((li_2) => (
-                  <li key={uniqid()}>{li_2}</li>
+                  <p key={uniqid()}>
+                    <GiBullet.GiBulletBill style={color.icon} /> {li_2}
+                  </p>
                 ))}
               </div>
             </div>

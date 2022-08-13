@@ -80,11 +80,11 @@ const education = {
 };
 
 const resume_skills_lists = [
-  "Front-End: JavaScript, React, HTML5, CSS3",
-  "Back-End: Ruby on Rails",
-  "Database: PostgreSQL",
-  "Tools & Methods: Git, GitHub, Heroku, Mobile,/Responsive Development, TDD, Chrome Dev Tools",
-  "Professional: Remote Pair-Programming, Teamwork, Mentoring",
+  "FRONTEND: JavaScript, React, HTML5, CSS3",
+  "BACKEND: Ruby on Rails",
+  "DATABASE: PostgreSQL",
+  "TOOLS & METHODS: Git, GitHub, Heroku, Mobile,/Responsive Development, TDD, Chrome Dev Tools",
+  "PROFESSIONAL: Remote Pair-Programming, Teamwork, Mentoring",
 ];
 
 export { resume, experience, social_links, education, resume_skills_lists };
