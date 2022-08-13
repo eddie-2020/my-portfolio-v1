@@ -1,76 +1,57 @@
-# Getting Started with Create React App
+# Full Stack Dev Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Full Stack Developer Edward has completed his portfolio and ready to be published
 
+[Portfolio Clip](https://user-images.githubusercontent.com/83566118/184479864-2fa66daf-0ff7-48f5-ae2b-6315f27f1ca0.mp4)
 
+## Features
 
-https://user-images.githubusercontent.com/83566118/184479864-2fa66daf-0ff7-48f5-ae2b-6315f27f1ca0.mp4
+• Multi-Page Layout
 
+• Shared Data across components
 
+• Modern Design
 
-## Available Scripts
+• React-Icons
 
-In the project directory, you can run:
+• Illustrations
 
-### `npm start`
+## How to use
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+① fork the repository and clone locally
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+② run `npm install` to install dependencies
 
-### `npm test`
+③ once installation is complete, run `npm run start` to get your local copy running in the browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Template instructions
 
-### `npm run build`
+① Replace the Images
+    
+• In public folder there are two folders for images. Replace those images with yours and if your image have different name  then you need to change the src of img tag in particular component
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+② edit App.css
+    
+• In App.css follow the instructions for color theme and font family
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+③ Replace Informations
+    
+• In all components you need to replace my information with your's.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+• Replace Name, About, Skills, Resume, Projects
 
-### `npm run eject`
+• Replace my contact information links with your's inside Sidebar component
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+• If you want to replace Icons then visit: https://react-icons.github.io/react-icons/
+     
+## 👤 Author 
+Edward Yara  
+- GitHub: [@oluyaratosin123](https://github.com/oluyaratosin123)
+- Twitter: [@TOluyara](https://twitter.com/TOluyara)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/edward-oluyara/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing :handshake:
+Contributions, issues, and feature requests are welcome!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Show your support
+Give a :star: if you like this project.

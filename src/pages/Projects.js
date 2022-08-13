@@ -388,11 +388,18 @@ const Projects = () => {
                   <BsLaptop style={{ fontSize: "25px" }} /> Watch Live
                 </a>
                 <a
-                  href={project_content.bcycom_app.source_code}
+                  href={project_content.bcycom_app.api_source_code}
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-blue rounded"
                   target="/blank"
                 >
-                  <AiFillGithub style={{ fontSize: "25px" }} /> Source Code
+                  <AiFillGithub style={{ fontSize: "25px" }} /> Backend
+                </a>
+                <a
+                  href={project_content.bcycom_app.ui_source_code}
+                  className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-blue rounded"
+                  target="/blank"
+                >
+                  <AiFillGithub style={{ fontSize: "25px" }} /> Frontend
                 </a>
               </div>
             </div>

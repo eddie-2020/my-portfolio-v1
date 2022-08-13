@@ -97,7 +97,9 @@ const project = {
         jwt: "Jwt-auth",
       },
       live_demo: "https://bcycom.herokuapp.com/",
-      source_code: "https://github.com/oluyaratosin123/Final-Capstone-Back-End",
+      api_source_code:
+        "https://github.com/oluyaratosin123/Final-Capstone-Back-End",
+      ui_source_code: "https://github.com/Dagic-zewdu/final-capstone-frontend",
     },
     metrics_app: {
       name: "Metrics App",
