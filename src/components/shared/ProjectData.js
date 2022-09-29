@@ -54,7 +54,7 @@ const project = {
   project_content: {
     todo: {
       name: "Todo App",
-      desc: "This is a todo list app that can add tasks and remove completed tasks from a listed event.",
+      desc: "This is an SPA todo list app where users can manage their tasks and events in a timely manner.",
       lang_used: {
         react: "React",
         webpack: "Webpacker",
@@ -77,7 +77,7 @@ const project = {
     },
     budget_app: {
       name: "Pocket Smith App",
-      desc: "This is a mobile web application where you can manage your budget and see a list of transactions associated with a category. Users can see how much money they have spent and on what item they spent their money on.",
+      desc: "This is a mobile web application where you can manage your budget and see a list of transactions associated with a category.",
       lang_used: {
         postgres: "Postgres",
         rails: "Ruby on Rails",
@@ -89,7 +89,7 @@ const project = {
     },
     bcycom_app: {
       name: "Bcycom App",
-      desc: "This is the back end I built to store motorcycles",
+      desc: "This app was built with Rails and React, Bcycom app can allow you to store and reserve your most favorite motorcycle models...",
       lang_used: {
         react: "React",
         rails: "Rails",
@@ -103,7 +103,7 @@ const project = {
     },
     metrics_app: {
       name: "Metrics App",
-      desc: "This is a react sample app for fetching external api documentation",
+      desc: "This is a simple React app integrated with a REST API documention that consists of various company details",
       lang_used: {
         react: "React",
         webpack: "Webpacker",
@@ -114,7 +114,7 @@ const project = {
     },
     space_travellers_app: {
       name: "Space Traveller App",
-      desc: "This project was built to collect users request to book a rocket using the SpaceX API documentation",
+      desc: "This project was built with React to collect users request to book a rocket using the SpaceX API documentation",
       lang_used: {
         react: "React",
         webpack: "Webpacker",

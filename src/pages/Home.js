@@ -1,6 +1,7 @@
 import React from "react";
 import { home } from "../components/shared/HomeData";
 import * as CgBorder from "react-icons/cg";
+import Social from "./Social";
 import TypeWriterEffect from "react-typewriter-effect";
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
   };
 
   return (
-    <div className="container text-center home_cont">
+    <div className="container text-center home_cont d-flex justify-content-evenly align-items-center">
       <div className="">
         <div className="">
           <div className="">
@@ -61,8 +62,7 @@ const Home = () => {
             typeSpeed={100}
           />
         </div>
-      </div>
-      <div className="type_border">
+        <div className="type_border">
         <TypeWriterEffect
           textStyle={{
             textAlign: "center",
@@ -84,6 +84,10 @@ const Home = () => {
           nextTextDelay={1000}
           typeSpeed={50}
         />
+      </div>
+      </div>
+      <div className="">
+        <Social />
       </div>
     </div>
   );

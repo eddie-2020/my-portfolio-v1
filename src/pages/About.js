@@ -14,7 +14,7 @@ const color = {
   },
 };
 const About = () => {
-  const { photo, title, description, description_sub_title, desc_end } = about;
+  const { photo, title, description, description_sub_title } = about;
   if (!lists.length) return null;
   return (
     <div>
@@ -34,7 +34,6 @@ const About = () => {
                 <GiBullet.GiBulletBill style={color.icon} /> {list}
               </p>
             ))}
-            {desc_end && <p className="mt-3">{desc_end}</p>}
           </div>
           <div className="">
             {photo && <img className="about_img mb-4" src={photo} alt="..." />}

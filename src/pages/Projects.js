@@ -23,12 +23,12 @@ const Projects = () => {
   } = project;
 
   return (
-    <section className="m-auto container mb-4">
+    <section className="m-auto container mb-4 d-flex justify-content-evenly align-items-center">
       <div className="col p-3">
         <div className="p-3">
           <div className="row">
             <div className="text-center">
-              <h1 className="fw-bold animate_">6 Web Applications 2021 </h1>
+              <h1 className="fw-bold animate_"> Technical Projects </h1>
             </div>
             <div className="text-center">
               <CgBorder.CgBorderStyleSolid style={color.bs_1} />
@@ -112,14 +112,14 @@ const Projects = () => {
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-danger rounded"
                   target="/blank"
                 >
-                  <BsLaptop style={{ fontSize: "25px" }} /> Watch Live
+                  <BsLaptop style={{ fontSize: "25px" }} /> View Live
                 </a>
                 <a
                   href={project_content.todo.source_code}
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-blue rounded"
                   target="/blank"
                 >
-                  <AiFillGithub style={{ fontSize: "25px" }} /> Source Code
+                  <AiFillGithub style={{ fontSize: "25px" }} /> View Source Code
                 </a>
               </div>
             </div>
@@ -201,7 +201,7 @@ const Projects = () => {
                     className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-blue rounded"
                     target="/blank"
                   >
-                    <AiFillGithub style={{ fontSize: "25px" }} /> Source Code
+                    <AiFillGithub style={{ fontSize: "25px" }} /> View Source Code
                   </a>
                 </div>
               </div>
@@ -290,14 +290,14 @@ const Projects = () => {
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-danger rounded"
                   target="/blank"
                 >
-                  <BsLaptop style={{ fontSize: "25px" }} /> Watch Live
+                  <BsLaptop style={{ fontSize: "25px" }} /> View Live
                 </a>
                 <a
                   href={project_content.budget_app.source_code}
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-blue rounded"
                   target="/blank"
                 >
-                  <AiFillGithub style={{ fontSize: "25px" }} /> Source Code
+                  <AiFillGithub style={{ fontSize: "25px" }} /> View Source Code
                 </a>
               </div>
             </div>
@@ -385,21 +385,21 @@ const Projects = () => {
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-danger rounded"
                   target="/blank"
                 >
-                  <BsLaptop style={{ fontSize: "25px" }} /> Watch Live
+                  <BsLaptop style={{ fontSize: "25px" }} /> View Live
                 </a>
                 <a
                   href={project_content.bcycom_app.api_source_code}
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-blue rounded"
                   target="/blank"
                 >
-                  <AiFillGithub style={{ fontSize: "25px" }} /> Backend
+                  <AiFillGithub style={{ fontSize: "25px" }} /> View Backend Source Code
                 </a>
                 <a
                   href={project_content.bcycom_app.ui_source_code}
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-blue rounded"
                   target="/blank"
                 >
-                  <AiFillGithub style={{ fontSize: "25px" }} /> Frontend
+                  <AiFillGithub style={{ fontSize: "25px" }} /> View Frontend Source Code
                 </a>
               </div>
             </div>
@@ -475,14 +475,14 @@ const Projects = () => {
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-danger rounded"
                   target="/blank"
                 >
-                  <BsLaptop style={{ fontSize: "25px" }} /> Watch Live
+                  <BsLaptop style={{ fontSize: "25px" }} /> View Live
                 </a>
                 <a
                   href={project_content.metrics_app.source_code}
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-blue rounded"
                   target="/blank"
                 >
-                  <AiFillGithub style={{ fontSize: "25px" }} /> Source Code
+                  <AiFillGithub style={{ fontSize: "25px" }} /> View Source Code
                 </a>
               </div>
             </div>
@@ -574,14 +574,14 @@ const Projects = () => {
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-danger rounded"
                   target="/blank"
                 >
-                  <BsLaptop style={{ fontSize: "25px" }} /> Watch Live
+                  <BsLaptop style={{ fontSize: "25px" }} /> View Live
                 </a>
                 <a
                   href="https://github.com/Yagnik-Gohil/Weather"
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-blue rounded"
                   target="/blank"
                 >
-                  <AiFillGithub style={{ fontSize: "25px" }} /> Source Code
+                  <AiFillGithub style={{ fontSize: "25px" }} /> View Source Code
                 </a>
               </div>
             </div>

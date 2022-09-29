@@ -1,6 +1,5 @@
 import React from "react";
 import { skills } from "../components/shared/SkillsData";
-import { Link } from "react-router-dom";
 import * as CgBorder from "react-icons/cg";
 
 const Skills = () => {
@@ -27,47 +26,77 @@ const Skills = () => {
   };
   return (
     <div className="skills_cont">
-      <h1 className="text-center animate_ fw-bolder mt-4">What I Do</h1>
+      <h1 className="text-center animate_ fw-bolder">Skills</h1>
       <div className="text-center">
         <CgBorder.CgBorderStyleSolid style={border.bs_1} />
       </div>
       <div className="skills container">
         <div className="">
           <div className="d-flex flex-wrap">
-            {javascript && (
-              <img
-                className="m-4 skill_icon"
-                src={javascript}
-                alt="javascript"
-              />
-            )}
-            {react && (
-              <img className="m-4 skill_icon" src={react} alt="react" />
-            )}
-            {sql && <img className="m-4 skill_icon" src={sql} alt="postgres" />}
-            {ruby && <img className="m-4 skill_icon" src={ruby} alt="ruby" />}
-            {rails && (
-              <img className="m-4 skill_icon" src={rails} alt="rails" />
-            )}
-            {html && <img className="m-4 skill_icon" src={html} alt="html" />}
-            {cs && <img className="m-4 skill_icon" src={cs} alt="css" />}
-            {heroku && (
-              <img className="m-4 skill_icon" src={heroku} alt="heroku" />
-            )}
-            {git && <img className="m-4 skill_icon" src={git} alt="github" />}
-            {sass && <img className="m-4 skill_icon" src={sass} alt="scss" />}
-            {bootstrap && (
-              <img className="m-4 skill_icon" src={bootstrap} alt="bootstrap" />
-            )}
-          </div>
-          <div className="col-md-6 offset-md-4 link_to_project">
-            <Link
-              to="/projects"
-              className="btn btn-lg btn-outline-danger btn_projects fw-bolder text-center"
-              style={{ fontSize: "16px" }}
-            >
-              View Projects
-            </Link>
+            <div className="d-flex align-items-center">
+              {javascript && (
+                <img
+                  className="m-3 skill_icon"
+                  src={javascript}
+                  alt="javascript"
+                />
+              )}
+              <p className="fs-6 btn btn-outline-secondary">javascript</p>
+            </div>
+            <div className="d-flex align-items-center">
+              {react && (
+                <img className="m-3 skill_icon" src={react} alt="react" />
+              )}
+              <p className="fs-6 btn btn-outline-secondary">Reactjs</p>
+            </div>
+            <div className="d-flex align-items-center">
+              {sql && (
+                <img className="m-3 skill_icon" src={sql} alt="postgres" />
+              )}
+              <p className="fs-6 btn btn-outline-secondary">Postgresql</p>
+            </div>
+            <div className="d-flex align-items-center">
+              {ruby && <img className="m-3 skill_icon" src={ruby} alt="ruby" />}
+              <p className="fs-6 btn btn-outline-secondary">Ruby</p>
+            </div>
+            <div className="d-flex align-items-center">
+              {rails && (
+                <img className="m-3 skill_icon" src={rails} alt="rails" />
+              )}
+              <p className="fs-6 btn btn-outline-secondary">Rails</p>
+            </div>
+            <div className="d-flex align-items-center">
+              {html && <img className="m-3 skill_icon" src={html} alt="html" />}
+              <p className="fs-6 btn btn-outline-secondary">HTML</p>
+            </div>
+            <div className="d-flex align-items-center">
+              {cs && <img className="m-3 skill_icon" src={cs} alt="css" />}
+              <p className="fs-6 btn btn-outline-secondary">CSS</p>
+            </div>
+            <div className="d-flex align-items-center">
+              {heroku && (
+                <img className="m-3 skill_icon" src={heroku} alt="heroku" />
+              )}
+              <p className="fs-6 btn btn-outline-secondary">Heroku</p>
+            </div>
+            <div className="d-flex align-items-center">
+              {git && <img className="m-3 skill_icon" src={git} alt="github" />}
+              <p className="fs-6 btn btn-outline-secondary">GitHub</p>
+            </div>
+            <div className="d-flex align-items-center">
+              {sass && <img className="m-3 skill_icon" src={sass} alt="scss" />}
+              <p className="fs-6 btn btn-outline-secondary">Sass</p>
+            </div>
+            <div className="d-flex align-items-center">
+              {bootstrap && (
+                <img
+                  className="m-3 skill_icon"
+                  src={bootstrap}
+                  alt="bootstrap"
+                />
+              )}
+              <p className="fs-6 btn btn-outline-secondary">Bootstrap</p>
+            </div>
           </div>
         </div>
         <div>
