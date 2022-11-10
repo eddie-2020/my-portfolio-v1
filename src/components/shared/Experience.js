@@ -1,6 +1,6 @@
 import React from "react";
 import uniqid from "uniqid";
-import { experience } from "./ResumeData";
+import { experience } from "../data/ResumeData";
 import * as GiBullet from "react-icons/gi";
 
 const Experience = () => {
@@ -8,10 +8,8 @@ const Experience = () => {
   return (
     <div className="">
       {experience.map((exp) => (
-        <div key={uniqid()} className="text-dark">
-          <h5 className="text-uppercase text-dark fw-bolder mt-4">
-            {exp.title}
-          </h5>
+        <div key={uniqid()} className="">
+          <h5 className="text-uppercase fw-bolder mt-4">{exp.title} </h5>
           <p style={font.desc}>{exp.description}</p>
           <p className="mt-0" style={font.built_with}>
             <GiBullet.GiBulletBill style={font.icon} /> {exp.built_with}

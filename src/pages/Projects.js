@@ -3,7 +3,7 @@ import { GrPrevious, GrNext } from "react-icons/gr";
 import { BsLaptop } from "react-icons/bs";
 import * as CgBorder from "react-icons/cg";
 import { AiFillGithub } from "react-icons/ai";
-import { project } from "../components/shared/ProjectData";
+import { project } from "../components/data/ProjectData";
 
 const color = {
   bs_1: {
@@ -35,7 +35,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="row container mx-auto align-items-center">
-            <div className="col-md-4 card p-3 shadow text-center my-2 card_marging">
+            <div className="col-md-4 card p-3 shadow-lg bg-dark text-light rounded text-center my-2 card_marging">
               <div
                 id="carouselExampleControls1"
                 className="carousel slide my-1"
@@ -123,7 +123,7 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className="col-md-4 card p-3 shadow text-center my-2">
+            <div className="col-md-4 card p-3 shadow-lg bg-dark text-light rounded text-center my-2">
               <div
                 id="carouselExampleControls2"
                 className="carousel slide my-1"
@@ -201,12 +201,13 @@ const Projects = () => {
                     className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-blue rounded"
                     target="/blank"
                   >
-                    <AiFillGithub style={{ fontSize: "25px" }} /> View Source Code
+                    <AiFillGithub style={{ fontSize: "25px" }} /> View Source
+                    Code
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 card p-3 shadow text-center my-2 card_marging">
+            <div className="col-md-4 card p-3 shadow-lg bg-dark text-light rounded text-center my-2 card_marging">
               <div
                 id="carouselExampleControls3"
                 className="carousel slide my-1"
@@ -301,7 +302,7 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className="col-md-4 card p-3 shadow text-center my-2">
+            <div className="col-md-4 card p-3 shadow-lg bg-dark text-light rounded text-center my-2">
               <div
                 id="carouselExampleControls4"
                 className="carousel slide my-1"
@@ -392,18 +393,20 @@ const Projects = () => {
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-blue rounded"
                   target="/blank"
                 >
-                  <AiFillGithub style={{ fontSize: "25px" }} /> View Backend Source Code
+                  <AiFillGithub style={{ fontSize: "25px" }} /> View Backend
+                  Source Code
                 </a>
                 <a
                   href={project_content.bcycom_app.ui_source_code}
                   className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-2 bg-blue rounded"
                   target="/blank"
                 >
-                  <AiFillGithub style={{ fontSize: "25px" }} /> View Frontend Source Code
+                  <AiFillGithub style={{ fontSize: "25px" }} /> View Frontend
+                  Source Code
                 </a>
               </div>
             </div>
-            <div className="col-md-4 card p-3 shadow text-center my-2 card_marging">
+            <div className="col-md-4 card p-3 shadow-lg bg-dark text-light rounded text-center my-2 card_marging">
               <div
                 id="carouselExampleControls5"
                 className="carousel slide my-1"
@@ -486,7 +489,7 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className="col-md-4 card p-3 shadow text-center my-2">
+            <div className="col-md-4 card-blocker card p-3 shadow-lg bg-dark text-light rounded text-center my-2">
               <div
                 id="carouselExampleControls6"
                 className="carousel slide my-1"

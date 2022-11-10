@@ -1,6 +1,6 @@
 import React from "react";
 import uniqid from "uniqid";
-import { resume_skills_lists } from "./ResumeData";
+import { resume_skills_lists } from "../data/ResumeData";
 import * as GiBullet from "react-icons/gi";
 
 const ResumeList = () => {
@@ -12,7 +12,7 @@ const ResumeList = () => {
         <p
           key={uniqid()}
           style={skill_font.list}
-          className="text-dark align-items-center mt-3"
+          className="align-items-center mt-3"
         >
           <GiBullet.GiBulletBill style={skill_font.icon} /> {resume_skill}
         </p>

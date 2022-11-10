@@ -1,6 +1,7 @@
 import React from "react";
-import { skills } from "../components/shared/SkillsData";
+import { skills } from "../components/data/SkillsData";
 import * as CgBorder from "react-icons/cg";
+import ProgressBar from "../components/shared/ProgressBar";
 
 const Skills = () => {
   const {
@@ -25,11 +26,12 @@ const Skills = () => {
     },
   };
   return (
-    <div className="skills_cont">
-      <h1 className="text-center animate_ fw-bolder">Skills</h1>
+    <div className="skills_cont container">
+      <h1 className="text-center animate_ fw-bolder mt-2">Technical Skills</h1>
       <div className="text-center">
         <CgBorder.CgBorderStyleSolid style={border.bs_1} />
       </div>
+      <div className="skills-sec">
       <div className="skills container">
         <div className="">
           <div className="d-flex flex-wrap">
@@ -98,12 +100,44 @@ const Skills = () => {
               <p className="fs-6 btn btn-outline-secondary">Bootstrap</p>
             </div>
           </div>
+          <div className="progress-contents">
+            <div className="progress">
+              <span className="progress-txt text-dark">Frontend: </span>
+              <ProgressBar bgcolor="#fd7e14" progress="65" height={23} />
+            </div>
+            {/* <hr /> */}
+            <div className="progress">
+              <span className="progress-txt text-dark">Backend: </span>
+              <ProgressBar bgcolor="#dc3545" progress="75" height={23} />
+            </div>
+            {/* <hr /> */}
+            <div className="progress">
+              <span className="progress-txt text-dark">Database: </span>
+              <ProgressBar bgcolor="#198754" progress="70" height={23} />
+            </div>
+            {/* <hr /> */}
+            <div className="progress">
+              <span className="progress-txt text-dark">Design: </span>
+              <ProgressBar bgcolor="#d63384" progress="85" height={23} />
+            </div>
+            {/* <hr /> */}
+            <div className="progress">
+              <span className="progress-txt text-dark">Product Management: </span>
+              <ProgressBar bgcolor="#6f42c1" progress="80" height={23} />
+            </div>
+            {/* <hr /> */}
+            <div className="progress">
+              <span className="progress-txt text-dark">Infra: </span>
+              <ProgressBar bgcolor="#0d6efd" progress="95" height={23} />
+            </div>
+          </div>
         </div>
         <div>
           {photo && (
             <img src={photo} alt="skill_photo" className="skills_img" />
           )}
         </div>
+      </div>
       </div>
     </div>
   );

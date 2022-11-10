@@ -3,7 +3,7 @@ import {
   resume,
   social_links,
   education,
-} from "../components/shared/ResumeData";
+} from "../components/data/ResumeData";
 import Experience from "../components/shared/Experience";
 import ResumeList from "../components/shared/ResumeList";
 import * as GiBullet from "react-icons/gi";
@@ -34,14 +34,12 @@ const Resume = () => {
 
   const color = {
     backgroundColor: "whitesmoke",
-    text_color: {
-      color: "#2f4c64",
-    },
+
     resume_header: {
-      backgroundColor: "#2f4c64",
+      backgroundColor: "#dc3545",
       color: "#fff",
+      borderRadius: "5px",
       alignItems: "center",
-      fontWeigth: "bolder",
       padding: "2px",
     },
     font: {
@@ -61,7 +59,7 @@ const Resume = () => {
               {name && (
                 <h2
                   className="ls-2 fw-bolder text-uppercase"
-                  style={color.text_color}
+                  
                 >
                   {name}
                 </h2>
@@ -69,8 +67,8 @@ const Resume = () => {
               <div>
                 {job_title && (
                   <h3
-                    className="fw-normal text-uppercase fs-5"
-                    style={color.text_color}
+                    className="fw-bolder text-uppercase fs-5"
+                    
                   >
                     {job_title}
                   </h3>
@@ -90,19 +88,19 @@ const Resume = () => {
             </div>
             <div
               style={color.resume_header}
-              className="text-uppercase text-center fw-bolder mt-4"
+              className="text-capitalized text-center hdr mt-4"
             >
               {summary_title && <h5>{summary_title}</h5>}
             </div>
             {summary && (
-              <p className="text-dark text-center mt-3" style={color.font}>
+              <p className=" text-center mt-3" style={color.font}>
                 {summary}
               </p>
             )}
           </div>
           <div
             style={color.resume_header}
-            className="text-uppercase text-center fw-bolder mt-4"
+            className="text-capitalized text-center hdr mt-4"
           >
             {skills_title && <h5>{skills_title}</h5>}
           </div>
@@ -110,13 +108,13 @@ const Resume = () => {
             <ResumeList />
           </div>
           <div
-            className="text-uppercase text-center fw-bolder mt-4"
+            className="text-capitalized text-center hdr mt-2"
             style={color.resume_header}
           >
             {experience_title && <h5>{experience_title}</h5>}
           </div>
           <div>
-            <div className="text-dark mt-3 d-flex justify-content-between">
+            <div className="mt-3 d-flex justify-content-between">
               <div>
                 {highlight && <h6 className="text-uppercase">{highlight}</h6>}
                 {job_field && <p className="fw-bolder">{job_field}</p>}
@@ -131,18 +129,18 @@ const Resume = () => {
               <div className="d-flex align-items-center justify-content-between">
                 <div>
                   {microverse && (
-                    <h6 className="text-uppercase text-dark">{microverse}</h6>
+                    <h6 className="text-uppercase ">{microverse}</h6>
                   )}
                   {job_experience && (
-                    <p className="text-dark fw-bolder">Mentor</p>
+                    <p className="fw-bolder">Mentor</p>
                   )}
                 </div>
-                <div className="text-dark">
+                <div className="">
                   {type_2 && <p>{type_2}</p>}
                   {date_2 && <p>{date_2}</p>}
                 </div>
               </div>
-              <div className="text-dark">
+              <div className="">
                 {list.map((li) => (
                   <p className="" key={uniqid()}>
                     <GiBullet.GiBulletBill style={color.icon} /> {li}
@@ -156,7 +154,7 @@ const Resume = () => {
               >
                 {title && <h5>{title}</h5>}
               </div>
-              <div className="text-dark d-flex justify-content-between align-items-center">
+              <div className=" d-flex justify-content-between align-items-center">
                 <div className="mt-3">
                   {school && <h6 className="text-uppercase">{school}</h6>}
                   {field_of_study && (
@@ -165,7 +163,7 @@ const Resume = () => {
                 </div>
                 <div>{date_3 && <p>{date_3}</p>}</div>
               </div>
-              <div className="text-dark">
+              <div className="">
                 {list_2.map((li_2) => (
                   <p key={uniqid()}>
                     <GiBullet.GiBulletBill style={color.icon} /> {li_2}

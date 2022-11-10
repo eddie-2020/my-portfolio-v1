@@ -53,7 +53,11 @@ body {
 }
 
 .skills_cont {
-  height: 90vh;
+  height: 100vh;
+}
+
+.skills-sec {
+  margin-top: 5rem;
 }
 
 .img-fluid {
@@ -91,11 +95,6 @@ body {
 .text_info:hover {
   color: #fff;
 }
-
-/* .img-fluid {
-  width: 800px;
-  height: 500px;
-} */
 
 .home_cont {
   margin-top: 80px;
@@ -142,6 +141,7 @@ body {
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
+  font-size: 2rem;
   color: #fff;
   background-clip: text;
   -webkit-background-clip: text;
@@ -213,6 +213,57 @@ body {
   height: 250px;
 }
 
+.progress {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #6c757d;
+  height: 3rem;
+  margin-top: 3rem;
+}
+
+.progress-txt {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.hdr {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.dark{
+  background-color: #212529;
+  color: #ffffff;
+}
+
+.theme-contents {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.theme-content-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.change-to-light-mode {
+  margin: 10px;
+  color: darkorange;
+  cursor: pointer;
+}
+
+.change-to-dark-mode {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.progress-contents {
+  margin-bottom: 3rem;
+}
+
 @media (max-width: 700px) {
   .font-big {
     font-family: "Ubuntu", sans-serif;
@@ -244,11 +295,14 @@ body {
     height: 100vh;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 20px;
     flex-direction: column;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
+  }
+  .animate-character {
+    font-size: 1.4rem;
   }
   .skills_img {
     width: 100%;
@@ -264,6 +318,13 @@ body {
   .link_to_project {
     text-align: center;
   }
+  .progress-txt {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .skills-sec {
+    margin-top: 27rem;
+  } 
 }
 @keyframes textclip {
   to {

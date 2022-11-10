@@ -1,5 +1,5 @@
 import React from "react";
-import { about, lists } from "../components/shared/AboutData";
+import { about, lists } from "../components/data/AboutData";
 import * as GiBullet from "react-icons/gi";
 import * as CgBorder from "react-icons/cg";
 import uniqid from "uniqid";
@@ -17,7 +17,7 @@ const About = () => {
   const { photo, title, description, description_sub_title } = about;
   if (!lists.length) return null;
   return (
-    <div>
+    <div className="container">
       {title && (
         <h1 className="text-center animate_ fw-bolder mt-4">{title}</h1>
       )}

@@ -1,9 +1,6 @@
-# Full Stack Dev Portfolio
+# My Portfolio
 
-Full Stack Developer Edward has completed his portfolio and ready to be published
-
-## Live Version
-[Full Stack Dev Portfolio](https://heroic-cocada-22c5c0.netlify.app/)
+[!](./src/components/assets/screenshots/skill_section.PNG)
 
 ## Features
 
@@ -15,13 +12,17 @@ Full Stack Developer Edward has completed his portfolio and ready to be publishe
 
 • React-Icons
 
+• Dark and Light mode theme
+
+• PDF Download (FileURL)
+
 • Illustrations
 
 ## How to use
 
 ① fork the repository and clone locally
 
-② run `npm install` to install dependencies
+② run `npm install` or `npm i`(short hand) to install dependencies
 
 ③ once installation is complete, run `npm run start` to get your local copy running in the browser.
 

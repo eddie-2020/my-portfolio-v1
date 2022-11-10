@@ -1,5 +1,5 @@
 :root {
-  --navBg: #ffffff;
+  --navBg: #212529;
 }
 
 .navbar {
@@ -13,7 +13,7 @@
 .menu-bars {
   margin-left: 2rem;
   font-size: 2rem;
-  background: #fff;
+  background: #212529;
   opacity: 95%;
   position: fixed;
   width: 100%;
@@ -26,6 +26,7 @@
   width: 250px;
   height: 100vh;
   display: flex;
+  overflow: scroll;
   justify-content: center;
   position: fixed;
   top: 0;
@@ -44,19 +45,24 @@
   align-items: center;
   padding: 8px 0 8px 16px;
   list-style: none;
-  height: 60px;
+  height: 10px;
 }
 
 .nav-text a {
   text-decoration: none;
-  color: #000;
-  font-size: 18px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
   width: 95%;
   height: 100%;
   display: flex;
   align-items: center;
   padding: 0 16px;
   border-radius: 4px;
+}
+
+.nav-content {
+  margin-top: 6rem;
 }
 
 .add-group-container {
@@ -88,6 +94,40 @@ span {
   margin-left: 16px;
 }
 
+.download-txt {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.ham-details {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.tool-bar-txt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download {
+  display: flex;
+  margin-right: 50px;
+}
+
+.ham-icon {
+  color: #333;
+}
+
+.cloud-download-icon {
+  font-size: 1.3rem;
+}
+
+.detailed-ham {
+  font-size: 1.2rem;
+}
+
 @media (max-width: 600px) {
   .nav-title {
     display: none;
@@ -103,5 +143,40 @@ span {
     top: 0;
     left: -100%;
     transition: 850ms;
+  }
+
+  .nav-text a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+  }
+
+  .nav-content {
+    margin-top: 3rem;
+  }
+
+  .download-txt {
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+
+  .cloud-download-icon {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .win-download-size {
+    display: none;
+  }
+
+  .detailed-ham {
+    font-size: 1rem;
   }
 }
