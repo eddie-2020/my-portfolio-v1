@@ -1,6 +1,6 @@
 # My Portfolio
 
-[!](./src/components/assets/screenshots/skill_section.PNG)
+![technical skills page](./src/components/assets/screenshots/skill_section.PNG)
 
 ## Features
 
